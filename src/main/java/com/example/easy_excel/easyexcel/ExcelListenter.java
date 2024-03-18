@@ -30,7 +30,7 @@ public class ExcelListenter extends AnalysisEventListener<Object> {
         //这里添加数据处理逻辑
 
 
-        //修改写入对象类
+        //修改写入对象类H5Data
         operateFile.writeFile(list,H5Data.class);
     }
 }
