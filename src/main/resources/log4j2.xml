@@ -33,6 +33,11 @@
                 <Delete basePath="${DAY_FILE_PATH}" maxDepth="1">
                     <IfFileName glob="info-*.log" />
                     <!--定时保存多少天的日志-->
+                    <IfLastModified age="30d"/>
+                </Delete>
+                <Delete basePath="${DAY_FILE_PATH}" maxDepth="1">
+                    <IfFileName glob="info-*.log" />
+                    <!--定时保存多少天的日志-->
                     <IfLastModified age="7d"/>
                     <IfAccumulatedFileCount exceeds="10"/>
                 </Delete>
