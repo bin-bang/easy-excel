@@ -2,6 +2,7 @@ package com.example.easy_excel.easyexcel;
 
 import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.event.AnalysisEventListener;
+import com.example.easy_excel.service.HandleService;
 import com.example.easy_excel.util.OperateFile;
 import com.example.easy_excel.vo.H5Data;
 
@@ -13,6 +14,7 @@ public class ExcelListenter extends AnalysisEventListener<Object> {
 
     List<Object> list = new ArrayList<Object>();
     private static OperateFile operateFile = new OperateFile();
+    private static HandleService service = new HandleService();
 
 
     @Override
